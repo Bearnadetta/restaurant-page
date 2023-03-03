@@ -1,11 +1,11 @@
+import { headerDiv } from "./header"
 const pageLoad = () => {
     console.log("you bundled it correctly!")
     const content = document.getElementById('content')
 
     // creates header div
-    const header = document.createElement('div')
-    content.appendChild(header)
-    header.textContent = 'Hello'
+    
+    content.appendChild(headerDiv())
 
     // creates main content div
     const mainDiv = document.createElement('div')
@@ -16,6 +16,7 @@ const pageLoad = () => {
     content.appendChild(footer)
     footer.textContent = '!'
 
+    
 }
 
 export {pageLoad};
