@@ -22,6 +22,12 @@ body {
 .header {
     height: 15%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-title {
+    color: white;
 }
 
 .main {
