@@ -7,14 +7,22 @@ const pageLoad = () => {
 
     // creates header div
     content.appendChild(headerDiv())
+    
+    const homeButton = document.getElementById('home-button')
+    const menuButton = document.getElementById('menu-button')
+    const contactButton = document.getElementById('contact-button')
+
+    homeButton.addEventListener('click', mainDiv.mainHome)
+    menuButton.addEventListener('click', mainDiv.mainMenu)
+    contactButton.addEventListener('click', mainDiv.mainContact)
+
 
     // creates main content div
     content.appendChild(mainDiv())
 
+   
     // creates footer
     content.appendChild(footerDiv())
-    
-
     
 }
 

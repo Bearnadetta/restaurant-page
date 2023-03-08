@@ -3,6 +3,7 @@ const mainDiv = () => {
     main.classList.add('main')
 
     const mainHome = () => {
+        mainClear();
         const homeDiv = document.createElement('div')
         homeDiv.classList.add('home-div')
         homeDiv.textContent = 'Home'
@@ -11,6 +12,7 @@ const mainDiv = () => {
     }
 
     const mainMenu = () => {
+        mainClear();
         const menuDiv = document.createElement('div')
         menuDiv.classList.add('menu-div')
         menuDiv.textContent = 'Menu'
@@ -19,6 +21,7 @@ const mainDiv = () => {
     }
 
     const mainContact = () => {
+        mainClear();
         const contactDiv = document.createElement('div')
         contactDiv.classList.add('contact-div')
         contactDiv.textContent = 'Contact'
@@ -26,7 +29,13 @@ const mainDiv = () => {
         return contactDiv
     }
 
-    return main
+    const mainClear = () => {
+        main.innerHTML = ''
+        main = document.createElement('div')
+        main.classList.add('main')
+    }
+
+    return main, mainHome, mainMenu, mainContact;
 
 }
 
