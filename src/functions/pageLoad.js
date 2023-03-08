@@ -1,6 +1,8 @@
+
 import { headerDiv } from "./header"
 import { mainDiv } from "./mainDiv"
 import { footerDiv } from "./footer"
+
 const pageLoad = () => {
     console.log("you bundled it correctly!")
     const content = document.getElementById('content')
@@ -12,9 +14,9 @@ const pageLoad = () => {
     const menuButton = document.getElementById('menu-button')
     const contactButton = document.getElementById('contact-button')
 
-    homeButton.addEventListener('click', mainDiv.mainHome)
-    menuButton.addEventListener('click', mainDiv.mainMenu)
-    contactButton.addEventListener('click', mainDiv.mainContact)
+    // homeButton.addEventListener('click', )
+    // menuButton.addEventListener('click', )
+    // contactButton.addEventListener('click', )
 
 
     // creates main content div

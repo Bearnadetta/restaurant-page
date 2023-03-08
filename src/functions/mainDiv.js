@@ -35,7 +35,7 @@ const mainDiv = () => {
         main.classList.add('main')
     }
 
-    return main, mainHome, mainMenu, mainContact;
+    return main
 
 }
 
